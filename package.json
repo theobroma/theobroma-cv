@@ -1,5 +1,5 @@
 {
-    "name": "cryptoverse-mui-v5",
+    "name": "theobroma-cv",
     "version": "0.1.0",
     "private": false,
     "license": "ISC",
@@ -19,20 +19,14 @@
         "@types/react-dom": "^17.0.11",
         "@types/react-redux": "^7.1.22",
         "@types/redux-logger": "^3.0.9",
-        "@welldone-software/why-did-you-render": "^6.2.3",
         "axios": "^0.25.0",
-        "chart.js": "^3.7.0",
-        "html-react-parser": "^1.4.5",
-        "millify": "^4.0.0",
         "react": "^17.0.2",
-        "react-chartjs-2": "^4.0.1",
         "react-dom": "^17.0.2",
         "react-redux": "^7.2.6",
         "react-router-dom": "^6.2.1",
         "react-scripts": "5.0.0",
         "redux-logger": "^3.0.6",
-        "typescript": "~4.5.5",
-        "zod": "^3.11.6"
+        "typescript": "~4.5.5"
     },
     "scripts": {
         "start": "react-scripts start",
