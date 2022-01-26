@@ -14,7 +14,13 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HomeIcon from '@mui/icons-material/Home';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
 import ListItemLink from './ListItemLink';
+import HideOnScroll from '../UI/HideOnScroll';
+import BackToTop from '../UI/BackToTop';
+
+const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 const drawerWidth = 240;
 
@@ -134,6 +140,14 @@ const PersistentDrawer: React.FC = ({ children }) => {
           />
         </List>
       </Drawer>
+
+      <Offset id="back-to-top-anchor">offset</Offset>
+      <BackToTop>
+        <Fab color="secondary" size="large" aria-label="back to top">
+          <KeyboardArrowUp />
+        </Fab>
+      </BackToTop>
+
       <Main open={open}>
         <DrawerHeader />
         {children}
