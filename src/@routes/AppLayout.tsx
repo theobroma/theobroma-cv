@@ -1,14 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import PersistentDrawerLeft from '../@components/AppBar/Drawer';
+import PersistentDrawer from '../@components/AppBar/PersistentDrawer';
 import Footer from '../@components/Footer';
 
 const AppLayout = () => {
   return (
     <div className="HolyGrail">
-      <PersistentDrawerLeft>
+      <PersistentDrawer>
         <Outlet />
-      </PersistentDrawerLeft>
+      </PersistentDrawer>
       <Footer />
     </div>
   );
