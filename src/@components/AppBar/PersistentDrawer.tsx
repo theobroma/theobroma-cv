@@ -73,7 +73,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-end',
 }));
 
-const PersistentDrawer: React.FC = ({ children }) => {
+const PersistentDrawer = ({ children }: { children?: React.ReactNode }) => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 

@@ -3,7 +3,7 @@ import Zoom from '@mui/material/Zoom';
 import Box from '@mui/material/Box';
 import React from 'react';
 
-const BackToTop: React.FC = ({ children }) => {
+const BackToTop = ({ children }: { children?: React.ReactNode }) => {
   const trigger = useScrollTrigger();
 
   // TODO: mb React.MouseEvent<HTMLElement>
